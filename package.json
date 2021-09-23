@@ -11,11 +11,12 @@
     "deploy": "npx gh-pages -d dist/angular-pwa",
     "start:pwa": "npm run build && npm run start:pwa-server",
     "start:pwa-server": "http-server -p 8080 -c-1 dist/angular-pwa",
-    "watch:prod": "ng build --watch --configuration production",
-    "heroku-postinstall": "npm install -g @angular/cli"
+    "watch:prod": "ng build --watch --configuration production"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~12.1.1",
+    "@angular/compiler-cli": "~12.1.1",
     "@angular/animations": "~12.1.1",
     "@angular/common": "~12.1.1",
     "@angular/compiler": "~12.1.1",
@@ -28,6 +29,7 @@
     "http-server": "^13.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
+    "typescript": "~4.3.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
