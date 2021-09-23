@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SwUpdatePromptComponent } from './sw-update-prompt/sw-update-prompt.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SwUpdatePromptComponent
   ],
   imports: [
     BrowserModule,

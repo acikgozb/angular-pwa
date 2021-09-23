@@ -9,7 +9,9 @@
     "test": "ng test",
     "predeploy": "npm run build --base-href=/angular-pwa/",
     "deploy": "npx gh-pages -d dist/angular-pwa",
-    "start:pwa": "npm run build && http-server -p 8080 -c-1 dist/angular-pwa"
+    "start:pwa": "npm run build && npm run start:pwa-server",
+    "start:pwa-server": "http-server -p 8080 -c-1 dist/angular-pwa",
+    "watch:prod": "ng build --watch --configuration production"
   },
   "private": true,
   "dependencies": {
