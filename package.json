@@ -11,7 +11,8 @@
     "deploy": "npx gh-pages -d dist/angular-pwa",
     "start:pwa": "npm run build && npm run start:pwa-server",
     "start:pwa-server": "http-server -p 8080 -c-1 dist/angular-pwa",
-    "watch:prod": "ng build --watch --configuration production"
+    "watch:prod": "ng build --watch --configuration production",
+    "heroku-postinstall": "npm install -g @angular/cli"
   },
   "private": true,
   "dependencies": {
